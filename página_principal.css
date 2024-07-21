@@ -32,7 +32,7 @@ h1{
     margin-bottom: 10px;
      font-size: 20px;}
 
-@media (max-width: 600px) {
+@media (max-width: 11600px) {
     .navbar {
         flex-direction: row;
         align-items: center;
