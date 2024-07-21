@@ -33,25 +33,19 @@ h1{
      font-size: 20px;}
 
 @media (max-width: 600px) {
-    .sidebar {
-        width: 100%; /* Full width on smaller screens */
-        height: auto; /* Auto height to fit content */
-        overflow: hidden; /* Hide overflow on smaller screens */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
     }
 }
 
-
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  .sidebar {
+.navbar {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -59,34 +53,31 @@ h1{
     position: fixed;
     top: 0;
     left: 0;
-    height: auto;
     overflow: hidden;
     display: flex;
     justify-content: space-around;
     box-shadow: 0 4px 6px -6px #222;
-  }
-  
-  /* Sidebar links */
-  .sidebar a {
+    z-index: 1000; /* Ensure the navbar is always on top */
+}
+
+.navbar a {
     display: block;
     color: black;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
-  }
+    font-size: 16px; /* Adjust the font size as needed */
+}
 
-
-  /* Active/current link */
-  .sidebar a.active {
+.navbar a.active {
     background-color: #04AA6D;
     color: white;
-  }
-  
-  /* Links on mouse-over */
-  .sidebar a:hover:not(.active) {
+    font-weight: bold; /* Make the active link bold */
+}
+
+.navbar a:hover:not(.active) {
     background-color: rgb(0, 153, 255);
-    color: white;
-  }
+    color: white;}
   
   /* Page content. Adjusting margin-top to compensate for the fixed topbar */
   div.content {
