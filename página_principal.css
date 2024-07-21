@@ -64,6 +64,7 @@ p {
   .sidebar {
       flex-direction: column;
       align-items: stretch;
+      font-size: 27px;
   }
 
   .sidebar a {
