@@ -32,6 +32,14 @@ h1{
     margin-bottom: 10px;
      font-size: 20px;}
 
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Auto height to fit content */
+        overflow: hidden; /* Hide overflow on smaller screens */
+    }
+}
+
 
 .sidebar {
     margin: 0;
@@ -67,14 +75,7 @@ h1{
     text-align: center;
   }
 
-@media (max-width: 600px) {
-    .sidebar {
-        width: 100%; /* Full width on smaller screens */
-        height: auto; /* Auto height to fit content */
-        overflow: hidden; /* Hide overflow on smaller screens */
-    }
-}
-  
+
   /* Active/current link */
   .sidebar a.active {
     background-color: #04AA6D;
