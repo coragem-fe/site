@@ -66,6 +66,14 @@ h1{
     text-decoration: none;
     text-align: center;
   }
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Auto height to fit content */
+        overflow: hidden; /* Hide overflow on smaller screens */
+    }
+}
   
   /* Active/current link */
   .sidebar a.active {
