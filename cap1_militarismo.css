@@ -13,6 +13,7 @@ p {
   margin-top: 50px; /* Adjusted to be closer to the paragraph */
   text-indent: 0; /* Remove text-indent */
   text-align: right; /* Center align the link */
+  clear: both;
 }
 
 #proximo a:visited{
