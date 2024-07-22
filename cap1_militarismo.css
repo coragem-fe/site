@@ -78,6 +78,7 @@ h1{
 }
 #proximo{
   font-size: 60px;
+  clear: both;
 }}
 
 /* Page content. Adjusting margin-top to compensate for the fixed topbar */
