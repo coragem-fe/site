@@ -60,10 +60,13 @@ p {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .sidebar {
       flex-direction: column;
       align-items: stretch;
+  }
+  #links{
+    font-size: 15px;
   }
 
   .sidebar a {
