@@ -9,7 +9,7 @@ p {
   font-size: 20px;
 }
 
-h2 {
+#proximo {
   margin-top: 50px; /* Adjusted to be closer to the paragraph */
   text-indent: 0; /* Remove text-indent */
   text-align: right; /* Center align the link */
@@ -75,9 +75,7 @@ text-decoration: none;
 h1{
   font-size: 20px;
 }
-h2{
-font-size: 60px;
-}}
+}
 
 /* Page content. Adjusting margin-top to compensate for the fixed topbar */
 div.content {
