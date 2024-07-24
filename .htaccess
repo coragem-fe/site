@@ -1,0 +1,15 @@
+# Habilita o mecanismo de reescrita
+RewriteEngine On
+
+# Condição para evitar reescrita de diretórios
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Condição para verificar se o arquivo .html existe
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Reescreve a URL removendo a extensão .html
+RewriteRule ^(.*)$ $1.html [L]
+
+# Redireciona URLs com .html para a versão sem a extensão
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^\s]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
